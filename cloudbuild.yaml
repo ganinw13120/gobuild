@@ -1,11 +1,8 @@
 steps:
-    # build the container image
   - name: 'gcr.io/cloud-builders/docker'
     args: ['build', '-t', 'gcr.io/fifth-battery-241006/gobuild', '.']
-    # push the container image to Container Registry
   - name: 'gcr.io/cloud-builders/docker'
     args: ['push', 'gcr.io/fifth-battery-241006/gobuild']
-    # Deploy container image to Cloud Run
   - name: 'gcr.io/cloud-builders/gcloud'
     args: 
       [
