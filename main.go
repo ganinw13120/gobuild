@@ -7,7 +7,7 @@ import (
 func main() {
 	e := echo.New()
 	e.GET("/", func(c echo.Context) error {
-		return c.String(200, "Success")
+		return c.String(200, "Success Gan")
 	})
 	e.Start(":8080")
 }
