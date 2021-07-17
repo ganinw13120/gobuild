@@ -7,7 +7,7 @@ import (
 func main() {
 	e := echo.New()
 	e.GET("/", func(c echo.Context) error {
-		return c.String(200, "Deploy success with variables!")
+		return c.String(200, "Deploy success!")
 	})
 	e.Start(":8080")
 }
